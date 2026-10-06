@@ -1,0 +1,286 @@
+/* =================================
+   CORES DA PÁGINA
+   HEX Principal: #1B1931 (Púrpura/Azul Noturno)
+   HEX Fundo: #FCEEE6 (Creme Suave)
+   HEX Destaque: #FF6B35 (Laranja do Pôr do Sol)
+   ================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    background-color: #FCEEE6;
+    color: #1B1931;
+
+    font-family: 'Montserrat', sans-serif;
+
+    line-height: 1.7;
+}
+
+
+/* ---------- CABEÇALHO ---------- */
+
+header {
+    min-height: 650px;
+
+    background-color: #1B1931;
+    color: #FCEEE6;
+
+    padding: 25px 8%;
+}
+
+
+/* ---------- MENU ---------- */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid #FF6B35;
+
+    padding-bottom: 20px;
+}
+
+.logo {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+}
+
+.menu a {
+    color: #FCEEE6;
+    text-decoration: none;
+
+    font-size: 13px;
+}
+
+
+/* ---------- HERO ---------- */
+
+.hero {
+    max-width: 800px;
+
+    margin: 150px auto 0;
+
+    text-align: center;
+}
+
+.hero span,
+.categoria,
+.titulo-secao span {
+    color: #FF6B35;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    letter-spacing: 3px;
+}
+
+h1 {
+    font-family: 'DM Serif Display', serif;
+
+    font-size: 70px;
+    font-weight: 400;
+
+    line-height: 1.1;
+
+    margin: 20px 0;
+}
+
+.hero p {
+    max-width: 500px;
+
+    margin: auto;
+
+    font-size: 16px;
+}
+
+
+/* ---------- CONTEÚDO PRINCIPAL ---------- */
+
+main {
+    max-width: 1100px;
+
+    margin: 90px auto;
+
+    padding: 0 30px;
+}
+
+
+/* ---------- ARTIGO DESTAQUE ---------- */
+
+.destaque {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+.imagem {
+    height: 450px;
+
+    background-color: #1B1931;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paisagem {
+    width: 80%;
+    height: 80%;
+
+    border: 1px solid #FF6B35;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Ajuste da imagem dentro da moldura */
+.imagem-destaque {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h2 {
+    font-family: 'DM Serif Display', serif;
+
+    font-size: 42px;
+    font-weight: 400;
+
+    line-height: 1.2;
+
+    margin: 15px 0 25px;
+}
+
+.texto p {
+    font-size: 15px;
+
+    margin-bottom: 20px;
+}
+
+.botao {
+    display: inline-block;
+
+    margin-top: 15px;
+
+    color: #1B1931;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    border-bottom: 1px solid #1B1931;
+}
+
+
+/* ---------- CARDS ---------- */
+
+.artigos {
+    margin-top: 130px;
+}
+
+.titulo-secao {
+    margin-bottom: 40px;
+}
+
+.titulo-secao h2 {
+    margin-top: 8px;
+}
+
+.cards {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.card {
+    background-color: white;
+
+    padding: 35px;
+
+    border-top: 3px solid #FF6B35;
+
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card > span {
+    font-family: 'DM Serif Display', serif;
+
+    font-size: 30px;
+
+    color: #FF6B35;
+}
+
+h3 {
+    font-family: 'DM Serif Display', serif;
+
+    font-size: 25px;
+
+    font-weight: 400;
+
+    line-height: 1.3;
+}
+
+.card p {
+    font-size: 14px;
+}
+
+
+/* ---------- RODAPÉ ---------- */
+
+footer {
+    background-color: #1B1931;
+
+    color: #FCEEE6;
+
+    text-align: center;
+
+    padding: 30px;
+
+    font-size: 13px;
+}
+
+
+/* ---------- RESPONSIVIDADE ---------- */
+
+@media (max-width: 700px) {
+
+    .menu {
+        display: none;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    .destaque {
+        grid-template-columns: 1fr;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+}
